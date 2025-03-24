@@ -10,8 +10,8 @@ import { ArrowLeft, Clock, DollarSign, Settings, Users } from "lucide-react"
 import { HexBackground } from "@/components/hex-background"
 
 // Mock data - would come from your contract in a real implementation
-const ADMIN_WALLET = "0x1234...5678"
-const TOKEN_SYMBOL = "TKN"
+const ADMIN_WALLET = "0x40eDDa0874B30463a0B4dCebb87467E959267407"
+const TOKEN_SYMBOL = "MQSLA"
 const PRESALE_END_DATE = new Date("2025-06-01T00:00:00Z")
 const TOKENS_RAISED = 2500000
 const TOKENS_GOAL = 5000000

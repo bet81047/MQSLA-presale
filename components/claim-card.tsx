@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Coins, Gift } from "lucide-react"
 
 // Mock data - would come from your contract in a real implementation
-const TOKEN_SYMBOL = "TKN"
+const TOKEN_SYMBOL = "MQSLA"
 const CLAIMABLE_TOKENS = 5000
 const CLAIMED_TOKENS = 2000
 const NEXT_CLAIM_DATE = new Date("2025-04-15T00:00:00Z")

@@ -33,8 +33,8 @@ export function Navbar({ onNavChange, activeCard }: NavbarProps) {
         <div className="rounded-full bg-gradient-to-r from-blue-900/80 to-purple-900/80 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.3)] px-4 py-2 flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <Link href="/" className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 flex items-center justify-center shadow-[0_0_10px_rgba(0,195,255,0.5)]">
-                <span className="text-lg font-bold text-white">TKN</span>
+              <div className="w-20 h-10 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 flex items-center justify-center shadow-[0_0_10px_rgba(0,195,255,0.5)]">
+                <span className="text-lg font-bold text-white">MQSLA</span>
               </div>
             </Link>
 
