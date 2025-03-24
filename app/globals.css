@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 260 60% 15%;
+  --foreground: 210 40% 98%;
+
+  --card: 200 100% 50%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+
+  --primary: 196 100% 50%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 196 100% 50%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 196 100% 50%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 196 100% 70%;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+.hexagon-pattern {
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+/* Update the presale-card-shape class to have a less aggressive clip-path */
+.presale-card-shape {
+  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+  border: 2px solid rgba(0, 195, 255, 0.7);
+  position: relative;
+}
+
+.glow-effect {
+  box-shadow: 0 0 15px rgba(0, 195, 255, 0.5), 0 0 30px rgba(0, 195, 255, 0.2);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 195, 255, 0.7);
+}
+
+.glow-border {
+  border: 1px solid rgba(0, 195, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 195, 255, 0.3), inset 0 0 5px rgba(0, 195, 255, 0.2);
+}
+
+.cyan-gradient {
+  background: linear-gradient(135deg, #00c3ff 0%, #0070ff 100%);
+}
+
+.blue-gradient {
+  background: linear-gradient(180deg, #0099ff 0%, #0055dd 100%);
+}
+
+.purple-gradient {
+  background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+}
+
+.crystal-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50L20 80L80 80L50 50ZM50 50L80 20L20 20L50 50Z' fill='%230088ff' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-size: 100px 100px;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-out forwards;
+}
+
+.progress-bar-custom {
+  height: 2rem;
+  width: 100%;
+  border-radius: 9999px;
+  background-color: rgba(0, 60, 150, 0.5);
+  overflow: hidden;
+  border: 1px solid rgba(0, 195, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 195, 255, 0.3), inset 0 0 5px rgba(0, 195, 255, 0.2);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c3ff 0%, #0070ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-text {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Update the card-outline class to match the new clip-path */
+.card-outline {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border: 2px solid rgba(0, 195, 255, 0.7);
+  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+  z-index: 0;
+  pointer-events: none;
+}
+
