@@ -6,9 +6,9 @@ import { Toaster } from "react-hot-toast"
 
 const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'ICO | mQsala',
+  description: 'mqSala is a cutting-edge ICO launching on the BSC Smart Chain',
+  generator: 'mQsala Team',
 }
 
 export default function RootLayout({
